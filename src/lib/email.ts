@@ -21,12 +21,6 @@ export async function sendEmail({
     from: process.env.EMAIL_FROM,
     to,
     subject,
-    html: `
-        <p>You requested a password reset.</p>
-        <p>${text}</p>
-
-
-        <p>If you didn't request this, you can safely ignore this email.</p>
-        `,
+    text,
   });
 }

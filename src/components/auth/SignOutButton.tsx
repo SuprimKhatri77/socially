@@ -1,4 +1,4 @@
-// "use client"
+"use client"
 
 import { signOut } from "@/lib/auth-client";
 import { Icons } from "../ui/icons";
@@ -17,7 +17,7 @@ export default function SignOutButton() {
     }
 
     return (
-        <div onClick={handleClick} className="flex items-center justify-between w-18 cursor-pointer">
+        <div onClick={handleClick} className="flex items-center justify-between w-18 cursor-pointer text-nowrap">
             <Icons.logOut />
             Log out
         </div>
